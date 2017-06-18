@@ -1,0 +1,20 @@
+div {
+    height: 150px;
+}
+
+#div_1 {
+    background-color: blueviolet;
+}
+#div_2 {
+    background-color: tomato;
+}
+#div_3 {
+    background-color: darkmagenta;
+}
+#div_4 {
+    background-color: gainsboro;
+}
+
+.class_1 {
+    width: 500px;
+}
