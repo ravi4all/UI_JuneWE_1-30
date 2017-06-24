@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #parent_1 p {
+            color: red;
+        }
+        #parent_1 > p {
+            color: teal;
+        }
+        #parent_1 .grand_child p, #parent_2 .grand_child p {
+            color: darkorchid;
+        }
+        #parent_1 .child {
+            background-color: bisque;
+            height: 300px;
+        }
+        #parent_2 + img {
+            height: 300px;
+            width: 300px;
+        }
+        #parent_2 ~ img {
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>More Selectors</h1>
+
+<div id="parent_1">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquam aperiam assumenda corporis cumque distinctio error,
+        expedita explicabo fugiat illum laborum, libero nam officia
+        possimus quas quasi quia quo ratione voluptatibus.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquam aperiam assumenda corporis cumque distinctio error,
+        expedita explicabo fugiat illum laborum, libero nam officia
+        possimus quas quasi quia quo ratione voluptatibus.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquam aperiam assumenda corporis cumque distinctio error,
+        expedita explicabo fugiat illum laborum, libero nam officia
+        possimus quas quasi quia quo ratione voluptatibus.
+    </p>
+
+    <div class="child">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam aperiam assumenda corporis cumque distinctio error,
+            expedita explicabo fugiat illum laborum, libero nam officia
+            possimus quas quasi quia quo ratione voluptatibus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam aperiam assumenda corporis cumque distinctio error,
+            expedita explicabo fugiat illum laborum, libero nam officia
+            possimus quas quasi quia quo ratione voluptatibus.
+        </p>
+
+        <div class="grand_child">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam aperiam assumenda corporis cumque distinctio error,
+                expedita explicabo fugiat illum laborum, libero nam officia
+                possimus quas quasi quia quo ratione voluptatibus.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="child child_2">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam aperiam assumenda corporis cumque distinctio error,
+            expedita explicabo fugiat illum laborum, libero nam officia
+            possimus quas quasi quia quo ratione voluptatibus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam aperiam assumenda corporis cumque distinctio error,
+            expedita explicabo fugiat illum laborum, libero nam officia
+            possimus quas quasi quia quo ratione voluptatibus.
+        </p>
+
+        <div class="grand_child">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam aperiam assumenda corporis cumque distinctio error,
+                expedita explicabo fugiat illum laborum, libero nam officia
+                possimus quas quasi quia quo ratione voluptatibus.
+            </p>
+        </div>
+
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquam aperiam assumenda corporis cumque distinctio error,
+        expedita explicabo fugiat illum laborum, libero nam officia
+        possimus quas quasi quia quo ratione voluptatibus.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquam aperiam assumenda corporis cumque distinctio error,
+        expedita explicabo fugiat illum laborum, libero nam officia
+        possimus quas quasi quia quo ratione voluptatibus.
+    </p>
+
+</div>
+
+<div id="parent_2">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquam aperiam assumenda corporis cumque distinctio error,
+        expedita explicabo fugiat illum laborum, libero nam officia
+        possimus quas quasi quia quo ratione voluptatibus.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquam aperiam assumenda corporis cumque distinctio error,
+        expedita explicabo fugiat illum laborum, libero nam officia
+        possimus quas quasi quia quo ratione voluptatibus.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquam aperiam assumenda corporis cumque distinctio error,
+        expedita explicabo fugiat illum laborum, libero nam officia
+        possimus quas quasi quia quo ratione voluptatibus.
+    </p>
+
+    <div class="child">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam aperiam assumenda corporis cumque distinctio error,
+            expedita explicabo fugiat illum laborum, libero nam officia
+            possimus quas quasi quia quo ratione voluptatibus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam aperiam assumenda corporis cumque distinctio error,
+            expedita explicabo fugiat illum laborum, libero nam officia
+            possimus quas quasi quia quo ratione voluptatibus.
+        </p>
+
+        <div class="grand_child">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam aperiam assumenda corporis cumque distinctio error,
+                expedita explicabo fugiat illum laborum, libero nam officia
+                possimus quas quasi quia quo ratione voluptatibus.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="child">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam aperiam assumenda corporis cumque distinctio error,
+            expedita explicabo fugiat illum laborum, libero nam officia
+            possimus quas quasi quia quo ratione voluptatibus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Aliquam aperiam assumenda corporis cumque distinctio error,
+            expedita explicabo fugiat illum laborum, libero nam officia
+            possimus quas quasi quia quo ratione voluptatibus.
+        </p>
+
+        <div class="grand_child">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Aliquam aperiam assumenda corporis cumque distinctio error,
+                expedita explicabo fugiat illum laborum, libero nam officia
+                possimus quas quasi quia quo ratione voluptatibus.
+            </p>
+        </div>
+
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquam aperiam assumenda corporis cumque distinctio error,
+        expedita explicabo fugiat illum laborum, libero nam officia
+        possimus quas quasi quia quo ratione voluptatibus.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Aliquam aperiam assumenda corporis cumque distinctio error,
+        expedita explicabo fugiat illum laborum, libero nam officia
+        possimus quas quasi quia quo ratione voluptatibus.
+    </p>
+
+</div>
+
+<hr/>
+
+<img src="../../images/00-22.gif" alt="image"/>
+<img src="../../images/00-22.gif" alt="image"/>
+<img src="../../images/00-22.gif" alt="image"/>
+<img src="../../images/00-22.gif" alt="image"/>
+
+
+
+</body>
+</html>
