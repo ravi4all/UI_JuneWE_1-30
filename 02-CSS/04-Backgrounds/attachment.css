@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    background-image: url("http://st3.cricketcountry.com/wp-content/uploads/2016/03/Indias-captain-Mahendra-Singh-Dhoni-makes-field-placement-during-the-first-T20-international-match-between-India-and-Sri-Lanka.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div {
+    height: 650px;
+    background-size: 100% 100%;
+    margin-bottom: 350px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("https://c3metrics.com/wp-content/uploads/2016/02/kung-fu-panda-4032-2560x1600.jpg");
+}
+
+#div_2 {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/04/Kung-Fu-Panda-Pictures-Images.jpg");
+}
+
+#div_3 {
+    background-image: url("http://o.aolcdn.com/hss/storage/midas/7f19b1feb048ad43fe265efd25c661e4/205345790/VIRENDER-SEHWAG_original+%283%29.jpg");
+}
+
+#div_4 {
+    background-image: url("https://heavyeditorial.files.wordpress.com/2016/06/gettyimages-544008000.jpg?quality=65&strip=all&strip=all");
+}
+
+#div_5 {
+    background-image: url("http://cdn-maf0.heartyhosting.com/sites/muscleandfitness.com/files/media/the-rock-dwayne-johnson-plate.jpg");
+}
+
+#div_6 {
+    background-image: url("https://i2.wp.com/www.starkhoji.com/wp-content/uploads/2016/05/AB-De-Villiers-HD-Wallpapers-10.jpg");
+}
