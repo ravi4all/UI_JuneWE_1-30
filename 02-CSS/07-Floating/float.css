@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+}
+
+.column_1 {
+    float: left;
+    /*background-color: burlywood;*/
+    width: 49%;
+    margin-right: 10px;
+}
+.column_2 {
+    float: left;
+    width: 49%;
+    background-color: #d34836;
+}
+
+#parent {
+    background-color: #bb0000;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*.blank {
+    clear: both;
+}*/
+
+.div_1 {
+    background-color: burlywood;
+}
