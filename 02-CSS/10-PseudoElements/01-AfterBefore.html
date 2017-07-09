@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        ul li {
+            display: inline-block;
+            margin: 0px 15px;
+            position: relative;
+        }
+        h1 {
+            position: relative;
+        }
+        h1:before {
+            content: "";
+            border: 2px solid red;
+            position: absolute;
+            width: 70px;
+            top: 0px;
+            left: 0px;
+        }
+        ul li:after {
+            content: "";
+            background-image: url("https://png.icons8.com/win8/50/107C10/expand-arrow");
+            background-size: 100% 100%;
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            right: -20px;
+            top: 0px;
+        }
+        ul li:hover:after {
+            background-image: url("http://irisoft.al/up-arrow-icon.png");
+        }
+    </style>
+</head>
+<body>
+
+<h1>After Before</h1>
+
+<ul>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+</ul>
+
+</body>
+</html>

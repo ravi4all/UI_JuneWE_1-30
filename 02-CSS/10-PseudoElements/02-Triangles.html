@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            background-color: #0077B5;
+            position: relative;
+        }
+        div:after {
+            content: "";
+            /*border: 100px solid #0077B5;*/
+            border-top: 100px dashed red;
+            /*border-bottom: 100px solid orange;*/
+            border-right: 100px dashed transparent;
+            border-left: 100px dashed transparent;
+            position: absolute;
+            right: -400px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Triangles</h1>
+
+<div></div>
+
+</body>
+</html>
