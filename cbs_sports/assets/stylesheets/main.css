@@ -1,0 +1,149 @@
+body {
+    margin: 0px;
+    font-family: 'proxima-nova',arial;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+#topbar {
+    background-color: #004482;
+    padding: 4px 5px 6px 0px;
+}
+#topbar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#topbar ul li {
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 11px;
+    color: #ffffea;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+#topbar ul li.active a {
+    color: #fff;
+}
+#topbar ul li a {
+    color: #B2DDED;
+    text-decoration: none;
+}
+#topbar .follow_us li {
+    margin: 0px 4px;
+}
+#topbar .follow_us ul li a{
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    height: 18px;
+    width: 44px;
+    padding-top: 5px;
+    text-align: center;
+}
+#topbar .follow_us li.fb {
+    background-color: #3b5998;
+}
+#topbar .follow_us li.tw {
+    background-color: #55acee;
+}
+#topbar .follow_us li.ins {
+    background-color: #517fa4;
+}
+
+
+#header {
+    background-color: #0055A6;
+}
+#header .logo {
+    width: 15%;
+    padding: 5px;
+}
+#header .logo img {
+    width: 100%;
+}
+#header ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#header ul li {
+    display: inline-block;
+    color: #B2DDED;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#header ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#header .user_section {
+    width: 25%;
+    text-align: right;
+    padding: 16px 0px;
+}
+#header .user_section li {
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+#main-navigation {
+    width: 50%;
+}
+#main-navigation ul li {
+    font-size: 18px;
+    position: relative;
+}
+#main-navigation ul li a{
+    color: #fff;
+    display: block;
+    padding: 16px 10px;
+}
+#main-navigation ul li:last-child i{
+    vertical-align: middle;
+}
+
+#main-navigation .dropdown {
+    position: absolute;
+    width: 350px;
+    cursor: pointer;
+    padding: 18px 10px;
+    border-top: 4px solid #5eaffd;
+    display: none;
+}
+#main-navigation .dropdown li  {
+    width: 45%;
+    left: 0px;
+    font-size: 15px;
+}
+#main-navigation .dropdown ul li a {
+    color: #232323;
+    padding: 5px;
+}
+#main-navigation .dropdown:before {
+    content: "";
+    border-bottom: 8px solid #5eaffd;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+}
+
+#main-navigation ul li:hover .dropdown {
+    display: block;
+}
