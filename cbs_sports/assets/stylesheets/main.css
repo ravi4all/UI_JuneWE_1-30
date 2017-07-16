@@ -17,6 +17,11 @@ body {
     display: table;
 }
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 
 #topbar {
     background-color: #004482;
@@ -146,4 +151,74 @@ body {
 
 #main-navigation ul li:hover .dropdown {
     display: block;
+}
+
+#content {
+    background-color: #F8F8F8;
+    padding: 30px 0px;
+}
+
+#section_1 .main_section {
+    width: 78%;
+    background-color: #000;
+    min-height: 482px;
+}
+#section_1 .two-col-layout .column{
+    width: 49.8%;
+    padding: 1px 0px 0px 1px;
+    min-height: 501px;
+}
+#section_1 .two-col-layout a {
+    display: block;
+    position: relative;
+}
+#section_1 .column img {
+    width: 100%;
+    min-height: 245px;
+}
+#section_1 .col-1 img {
+    min-height: 495px;
+}
+#section_1 .column .description {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    z-index: 10;
+}
+#section_1 .column a {
+    font-weight: 900;
+    color: #fff;
+}
+#section_1 .column a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(0,0,0);
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+#section_1 .main_sidebar{
+    min-height: 482px;
+    width: 22%;
+    background-color: #272F3E;
+    padding: 10px 0px;
+}
+#section_1 .main_sidebar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#section_1 .main_sidebar ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    padding: 10px 18px;
+    color: #fff;
+}
+#section_1 .main_sidebar h3 {
+    margin: 0px;
 }
