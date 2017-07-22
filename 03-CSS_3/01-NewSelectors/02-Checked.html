@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img {
+            display: none;
+        }
+        input[value='img_1']:checked ~ #image img {
+            display: block;
+        }
+        input[value='m']:checked ~ #male img {
+            display: block;
+        }
+        input[value='f']:checked ~ #female img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Target and Checked</h1>
+
+<input type="checkbox" value="img_1"/> Show Image
+<input type="checkbox" value="m"/> Male
+<input type="checkbox" value="f"/> Female
+
+<div id="image">
+    <img src="../../images/NewImages/NiiP10g.png" alt="image"/>
+</div>
+
+<div id="male">
+    <img src="https://image.flaticon.com/icons/png/512/0/93.png" alt="image"/>
+</div>
+
+<div id="female">
+    <img src="https://www.shareicon.net/download/2015/12/27/693736_people.svg" alt="image"/>
+</div>
+
+</body>
+</html>
