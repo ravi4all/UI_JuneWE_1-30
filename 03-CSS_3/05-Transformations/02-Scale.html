@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            border: 1px solid red;
+            text-align: center;
+            /*overflow: hidden;*/
+        }
+        div img {
+            height: 300px;
+            width: 300px;
+            transition: 1s;
+            transform: scale(0.01,0.01);
+        }
+        div:hover img {
+            /*width: 600px;
+            height: 600px;*/
+            transform: scale(2,2);
+            transition: 10s;
+        }
+        .earth {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            left: 44%;
+            top: 23%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Transform : Scale</h1>
+
+<div>
+    <img src="../../images/NewImages/LziFSQN.png" alt="image"/>
+</div>
+
+<img class="earth" src="../../images/00-22.gif" alt="image"/>
+
+
+</body>
+</html>

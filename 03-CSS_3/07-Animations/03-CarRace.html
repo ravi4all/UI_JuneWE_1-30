@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div {
+            position: absolute;
+            width: 100px;
+            height: 150px;
+            bottom: 80px;
+            animation: cars 10s infinite;
+        }
+        img {
+            width: 100%;
+        }
+        #div_1 {
+            left: 2%;
+            animation-timing-function: ease-in;
+        }
+        #div_2 {
+            left: 22%;
+            animation-timing-function: ease-out;
+        }
+        #div_3 {
+            left: 42%;
+            animation-timing-function: ease-in-out;
+        }
+        #div_4 {
+            left: 62%;
+            animation-timing-function: linear;
+        }
+        #div_5 {
+            left: 82%;
+            animation-timing-function: ease;
+        }
+        @keyframes cars {
+            0% {
+                transform: translate(0px,0px);
+            }
+            50% {
+                transform: translate(0px, -400px) rotate(-180deg);
+            }
+            100% {
+                transform: translate(0px,0px) rotate(-180deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="div_1">
+    <img src="car-clipart-top-view-red-car-top-view-hi.png" alt="image"/>
+</div>
+
+<div id="div_2">
+    <img src="car-clipart-top-view-red-car-top-view-hi.png" alt="image"/>
+</div>
+
+<div id="div_3">
+    <img src="car-clipart-top-view-red-car-top-view-hi.png" alt="image"/>
+</div>
+
+<div id="div_4">
+    <img src="car-clipart-top-view-red-car-top-view-hi.png" alt="image"/>
+</div>
+
+<div id="div_5">
+    <img src="car-clipart-top-view-red-car-top-view-hi.png" alt="image"/>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #parent {
+            border: 1px solid red;
+            padding: 20px;
+            width: 220px;
+            margin: 0 auto;
+            perspective: 500px;
+        }
+        #child {
+            height: 300px;
+            width: 200px;
+            background-color: #0077B5;
+            transition: 5s;
+            transform-origin: left;
+            /*backface-visibility: hidden;*/
+        }
+        #parent:hover #child, img {
+            transform: rotateY(-180deg);
+        }
+        /*#parent:hover img {
+            backface-visibility: hidden;
+        }*/
+        img {
+            transition: 5s;
+            transition-delay: 4s;
+            /*transform-origin: left;*/
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Perspective</h1>
+
+<div id="parent">
+    <div id="child">
+        <img src="../../images/NewImages/LziFSQN.png" alt="image"/>
+    </div>
+</div>
+
+</body>
+</html>
