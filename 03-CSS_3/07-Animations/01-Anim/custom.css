@@ -1,0 +1,73 @@
+body {
+    margin: 0px;
+}
+#slider {
+    height: 650px;
+    background-size: 100% 100%;
+    animation: slider 2s linear;
+}
+@keyframes slider {
+    0% {
+        background-image: url("../../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+    }
+    10% {
+        background-image: url("../../../images/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg");
+    }
+    20% {
+        background-image: url("../../../images/WebImages/batman_arkham_knight-1366x768.jpg");
+    }
+    30% {
+        background-image: url("../../../images/WebImages/chris_hemsworth__angry_thor.jpg");
+    }
+    40% {
+        background-image: url("../../../images/NewImages/ageofultron-promo-art-hulk-in-action.png");
+    }
+    50% {
+        background-image: url("../../../images/WebImages/the-joker-black-white.jpeg");
+    }
+    60% {
+        background-image: url("../../../images/NewImages/LziFSQN.png");
+    }
+    70% {
+        background-image: url("../../../images/WebImages/Iron-Man-3-2013-Wallpaper.jpg");
+    }
+    80% {
+        background-image: url("../../../images/NewImages/iron_man_2008_flying_2_by_ent2pri9se-d7dxg2z.png");
+    }
+    90% {
+        background-image: url("../../../images/NewImages/Thor-Transparent-PNG.png");
+    }
+    100% {
+        transform: scale(0.01,0.01);
+        background-image: url("../../../images/WebImages/awesome-wallpapers-6482-6759-hd-wallpapers.jpg");
+    }
+}
+
+#slider_container {
+    animation: anim_1 10s linear;
+}
+@keyframes anim_1 {
+    0% {
+    }
+    100% {
+    }
+}
+
+
+#name {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    animation: name 3s linear;
+}
+#name img {
+    width: 20%;
+}
+@keyframes name {
+    0% {
+        transform: scale(0.1,0.1);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
