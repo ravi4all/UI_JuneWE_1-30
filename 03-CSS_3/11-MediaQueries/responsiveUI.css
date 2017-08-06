@@ -1,0 +1,12 @@
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 31%;
+    border-right: 1px solid red;
+    padding: 10px;
+}
