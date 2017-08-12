@@ -1,12 +1,139 @@
+body {
+    margin: 0px;
+}
 .clearfix:after {
     content: '';
     clear: both;
     display: table;
 }
 
+#header {
+    background-color: #517fa4;
+    padding: 10px;
+}
+#header .logo {
+    float: left;
+    width: 15%;
+}
+#header .logo img {
+    width: 100%;
+}
+
+
+#main-nav {
+    padding-top: 5px;
+    float: left;
+    width: 80%;
+    margin-left: 20px;
+}
+#main-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main-nav ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+#main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+#main-nav .menu-btn, #main-nav input[type="checkbox"] {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#main-nav .menu-btn .line {
+    display: block;
+    border: 2px solid red;
+    margin-bottom: 2px;
+    width: 20px;
+}
+
+#main-nav input[type="checkbox"] {
+    right: 24px;
+    width: 20px;
+    height: 15px;
+    opacity: 0;
+}
+
+@media (min-width: 993px) {
+    #main-nav .menu-btn {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    #main-nav .menu-btn {
+        display: block;
+        pointer-events: none;
+    }
+    #main-nav {
+        margin-left: 0px;
+    }
+    #main-nav ul {
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+        left: 0px;
+        top: 50px;
+        text-align: center;
+        padding: 10px 0px;
+        /*display: none;*/
+        transform: scale(1,0);
+        transform-origin: top;
+        transition: 1s;
+    }
+    #main-nav ul li {
+        display: block;
+        margin: 0px 0px 10px;
+    }
+    #main-nav input[type="checkbox"]:checked ~ ul {
+        /*display: block;*/
+        transform: scale(1,1);
+    }
+}
+
+
 .column {
     float: left;
     width: 31%;
     border-right: 1px solid red;
     padding: 10px;
+}
+
+@media (max-width: 992px) {
+    body {
+        background-color: #DDDDDD;
+    }
+    .column {
+        width: 45%;
+    }
+    .column:last-child {
+        float: none;
+        width: 100%;
+        border: none;
+        padding: 0px;
+    }
+}
+
+/*
+@media (min-width: 992px) {
+    body {
+        background-color: #999999;
+    }
+}*/
+
+
+@media (max-width: 768px) {
+    .column {
+        float: none;
+        border-right: none;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0px;
+    }
 }
