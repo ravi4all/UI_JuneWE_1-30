@@ -1,0 +1,192 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0px;
+}
+
+#container {
+    overflow: hidden;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 10px;
+}
+#header .contact {
+    width: 15%;
+    padding-top: 10px;
+}
+#header .contact p {
+    margin: 0px;
+    color: #fff;
+}
+#header .logo {
+    text-align: center;
+    width: 62%;
+    margin: 0 auto;
+}
+#header .logo h1 {
+    text-transform: uppercase;
+    color: #ff3a5f;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+#header .search {
+    width: 20%;
+    text-align: right;
+    padding-top: 3px;
+}
+#header .search input[type="text"] {
+    border: 1px solid #fff;
+    padding: 0px 10px;
+    height: 30px;
+    background-color: transparent;
+}
+#header .search button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    height: 30px;
+    color: #fff;
+}
+#header hr {
+    margin: 10px 0px 0px;
+}
+
+#main-navigation ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main-navigation ul li {
+    display: inline-block;
+    margin: 0px 75px;
+    letter-spacing: 2px;
+    position: relative;
+}
+#main-navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 5px;
+}
+#main-navigation ul li:first-child {
+    margin-left: 0px;
+}
+#main-navigation ul li:last-child {
+    margin-right: 0px;
+}
+
+#main-navigation ul li:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    transform: scale(0,1);
+    transform-origin: left;
+    border: 2px solid red;
+    transition: 0.5s;
+}
+#main-navigation ul li:hover:after {
+    transform: scale(1,1);
+}
+
+
+#banner {
+    min-height: 650px;
+    background-image: url("../images/banner5.jpg");
+    background-size: 100% 100%;
+    overflow: hidden;
+    text-align: center;
+}
+#banner .slider {
+    width: 500%;
+    animation: banner_slider 20s infinite linear;
+    position: absolute;
+    top: 45%;
+    left: 0%;
+}
+#banner .slide {
+    float: left;
+    width: 20%;
+}
+#banner h2, #banner p {
+    width: 70%;
+    margin: 0 auto 20px;
+    padding: 15px 0px;
+    color: #ffffea;
+    background-color: rgba(0,0,0,0.5);
+}
+#banner h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+@keyframes banner_slider {
+    0% {
+        left: 0%;
+    }
+    15% {
+        left: 0%;
+    }
+    20% {
+        left: -100%;
+    }
+    35% {
+        left: -100%;
+    }
+    40% {
+        left: -200%;
+    }
+    55% {
+        left: -200%;
+    }
+    60% {
+        left: -300%;
+    }
+    75% {
+        left: -300%;
+    }
+    80% {
+        left: -400%;
+    }
+    95% {
+        left: -400%;
+    }
+    100% {
+        left: -400%;
+    }
+}
