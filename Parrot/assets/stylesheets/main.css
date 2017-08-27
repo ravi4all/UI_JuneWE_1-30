@@ -1,0 +1,39 @@
+.wrapper {
+    padding: 0px 40px;
+    background-color: #000;
+}
+#header {
+    position: fixed;
+    width: 93%;
+    background-color: transparent;
+}
+#header .navbar-brand img {
+    width: 40%;
+}
+
+.navbar {
+    padding: 0px;
+}
+.bg-light {
+    background-color: transparent !important;
+}
+
+
+#main-nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main-nav ul li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+#main-nav ul li a {
+    color: #000;
+}
+
+#banner{ 
+    min-height: 500px;
+    background-image: url(../images/banner.jpg);
+    background-size: 100% 100%;
+}
