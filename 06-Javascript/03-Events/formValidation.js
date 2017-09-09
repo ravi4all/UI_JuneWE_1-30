@@ -10,8 +10,8 @@ function init(){
     box_3 = document.getElementById("box_3");
     
     box_1.addEventListener("blur", blankCheck);
-    box_2.addEventListener("change", checkPwdLength);
-    box_3.addEventListener("change", confirmPassword);
+    box_2.addEventListener("keyup", checkPwdLength);
+    box_3.addEventListener("keyup", confirmPassword);
 }
 
 function blankCheck(){
@@ -25,6 +25,7 @@ function blankCheck(){
 }
 
 function checkPwdLength(){
+    console.log("Executed...")
     var err_2 = document.getElementById("err2");
     if (box_2.value.length == 0){
         err_2.innerHTML = "Please fill this field";

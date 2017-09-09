@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #div_1 {
+            border: 2px solid red;
+        }
+        #div_2 {
+            height: 100px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+   
+   <h1>Mouse Events</h1>
+   
+   <div id="div_1" onmouseover="changeImg()" onmouseout="changeImg2()">
+       <img src="../../images/images/l34882-ironman-rigged-original-model--98611.jpg" alt="">
+   </div>
+   
+   <div onmousedown="showText()" id="div_2">
+       
+   </div>
+    
+    
+    <script>
+        function changeImg(){
+            /*alert("Mouse Over...")*/
+            document.getElementById("div_1").innerHTML = '<img src="../../images/images/NEbZRNg3YX0cfc_1_b.jpg">'
+        }
+        function changeImg2(){
+            document.getElementById("div_1").innerHTML = ' <img src="../../images/images/l34882-ironman-rigged-original-model--98611.jpg">'
+        }
+        function showText(){
+            document.getElementById("div_2").innerHTML = "<h2>Content coming after mouse down event</h2>";
+        }
+        
+    </script>
+</body>
+</html>

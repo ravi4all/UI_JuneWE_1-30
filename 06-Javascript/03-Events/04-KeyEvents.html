@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>Key Events</h1>
+   
+   3 types of key events : <br>
+   1. KeyPress <br>
+   2. KeyDown <br>
+   3. KeyUp <br>
+   
+   <!--<h2>KeyPress</h2>-->
+   <!--<input type="text" id="box_1" onkeypress="show()">-->
+   
+   <!--<h2>KeyDown</h2>
+   <input type="text" id="box_1" onkeydown="show()">-->
+   
+   <h2>KeyUp</h2>
+   <input type="text" id="box_1" onkeyup="show()">
+   <span id="res"></span>
+   
+   <script>
+       function show(){
+            a = document.getElementById("box_1").value;
+           /*window.alert("Key press executed...");*/
+           document.getElementById("res").innerHTML = a;
+       }
+    </script>
+    
+</body>
+</html>

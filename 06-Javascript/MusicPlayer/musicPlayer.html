@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #audio {
+            position: absolute;
+            display: none;
+        }
+        input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 50%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -10px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+    </style>
+</head>
+<body>
+   
+   <h1>Juke Box</h1>
+   
+   <audio id="audio" controls>
+       <source src="audio/">
+   </audio>
+   
+   <span id="startTime">00:00</span>
+   <input type="range" value="0" id="slider"> 
+   <span id="totalTime">00:00</span>
+   
+   <button onclick="playSong1()">Play</button>
+   <button onclick="pauseSong()">Pause</button>
+   <button onclick="stopSong()">Stop</button>
+   
+   <div>
+       <a href="#">Shape of You</a> <br>
+       <a href="#">Galti</a> <br>
+       <a href="#">Na Ja</a> <br>
+   </div>
+    
+    
+    <script>
+        window.addEventListener("load", init);
+        function init(){
+            a = document.getElementsByTagName("a");
+            for(var i=0; i<a.length; i++){
+                a[i].addEventListener("click", playSong);
+            }
+        }
+        function playSong(){
+            value = event.srcElement.innerHTML;
+            audio = document.getElementById("audio");
+            audio.src = 'audio/'+value+'.mp3';
+            audio.play();
+            setInterval(slider, 500);
+        }
+        function playSong1(){
+            audio.play();
+        }
+        function pauseSong(){
+            audio.pause();
+        }
+        function stopSong(){
+            audio.pause();
+            audio.currentTime = 0;
+        }
+        function slider(){
+            startTime = document.getElementById("startTime");
+            startTime.innerHTML = parseInt(audio.currentTime);
+            s = document.getElementById("slider");
+            s.value = parseInt(audio.currentTime);
+            console.log(s.value);
+        }
+        /*function playSlider(){
+            while (true){
+                slider()
+            }
+        }*/
+    </script>
+</body>
+</html>
