@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#background {
+    height: 640px;
+    /*background-image: url("assets/citytiled1.png");
+    background-size: auto 100%;*/
+    width: 8000px;
+    transition: 0.1s;
+}
+#background img {
+    width: 100%;
+    height: inherit;
+}
+
+#player {
+    position: fixed;
+    left: 40%;
+    bottom: 5%;
+}

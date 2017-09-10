@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script src="music.js"></script>
     <style>
         #audio {
             position: absolute;
@@ -63,44 +64,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
        <a href="#">Na Ja</a> <br>
    </div>
     
-    
-    <script>
-        window.addEventListener("load", init);
-        function init(){
-            a = document.getElementsByTagName("a");
-            for(var i=0; i<a.length; i++){
-                a[i].addEventListener("click", playSong);
-            }
-        }
-        function playSong(){
-            value = event.srcElement.innerHTML;
-            audio = document.getElementById("audio");
-            audio.src = 'audio/'+value+'.mp3';
-            audio.play();
-            setInterval(slider, 500);
-        }
-        function playSong1(){
-            audio.play();
-        }
-        function pauseSong(){
-            audio.pause();
-        }
-        function stopSong(){
-            audio.pause();
-            audio.currentTime = 0;
-        }
-        function slider(){
-            startTime = document.getElementById("startTime");
-            startTime.innerHTML = parseInt(audio.currentTime);
-            s = document.getElementById("slider");
-            s.value = parseInt(audio.currentTime);
-            console.log(s.value);
-        }
-        /*function playSlider(){
-            while (true){
-                slider()
-            }
-        }*/
-    </script>
+
 </body>
 </html>

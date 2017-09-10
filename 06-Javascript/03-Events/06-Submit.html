@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function submitForm(event){
+            document.getElementById("output").innerHTML = '<h1>Welcome User</h1>';
+            event.preventDefault();
+        }
+    </script>
+</head>
+<body>
+   
+   <h1 id="text">On Submit</h1>
+   
+   <div id="output">
+       <form action="01-Blur.html" onsubmit="submitForm(event)">
+       <input type="text" placeholder="Enter First Name"><br>
+       <input type="text" placeholder="Enter Last Name"><br>
+       <input type="password" placeholder="Enter password"><br>
+       <input type="submit">
+   </form>
+   </div>
+   
+    
+</body>
+</html>
