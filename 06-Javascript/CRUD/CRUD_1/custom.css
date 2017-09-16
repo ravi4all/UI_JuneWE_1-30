@@ -1,0 +1,9 @@
+#content {
+    display: flex;
+}
+
+li.select {
+    color: red;
+    text-decoration: line-through;
+    font-style: italic;
+}
